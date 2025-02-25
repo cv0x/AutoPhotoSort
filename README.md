@@ -9,7 +9,6 @@ AutoPhotoSort/
 ├── data/
 │   ├── input/
 │   └── output/
-├── docs/
 ├── src/
 │   └── sorter.py
 ├── autophotosort.py
