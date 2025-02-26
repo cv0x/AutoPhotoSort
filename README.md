@@ -11,8 +11,11 @@ AutoPhotoSort/
 │   ├── input/
 │   └── output/
 ├── src/
+│   ├── AutoPhotoSortLogo.png
 │   └── sorter.py
 ├── autophotosort.py
+├── autophotosort_gui.py
+├── AutoPhotoSort start.bat
 ├── README.md
 └── requirements.txt
 ```
@@ -52,10 +55,28 @@ pip install -r requirements.txt
 
     Once the script finishes, your photos will be sorted into folders by year and month within the `data/output` directory. For example, photos taken in November 2024 will be in a folder named `2024 November`.
 
+## GUI Application
+
+This project now includes a graphical user interface (GUI) for easier interaction.
+
+### How to Run the GUI
+
+1.  **Run the `AutoPhotoSort start.bat` script:**
+    Simply double-click the `AutoPhotoSort start.bat` file in the project directory.
+    -   This script will automatically check if Python is installed and guide you to install it if necessary.
+    -   It will also install the required Python libraries from `requirements.txt`.
+    -   Finally, it will launch the `autophotosort_gui.py` application.
+
+2.  **Using the GUI:**
+    -   The GUI provides buttons to open and select input and output folders. By default, it is set to `data/input` and `data/output` folders in the project directory.
+    -   Click "Start Sorting" to begin organizing your photos.
+
 ## Script Details
 
 -   `src/sorter.py`: Contains the core logic for reading EXIF metadata from images and sorting photos into directories.
--   `autophotosort.py`:  The main script that sets up input and output directories and calls the photo splitting function.
+-   `autophotosort.py`:  The main script that sets up input and output directories and calls the photo sorting function for command line interface.
+-   `autophotosort_gui.py`: Implements the graphical user interface using Tkinter, providing an easier way to interact with the photo sorting tool.
+-   `AutoPhotoSort start.bat`: A batch script that simplifies running the GUI application by checking for Python, installing dependencies, and launching `autophotosort_gui.py`.
 
 ## Future Enhancements
 
