@@ -1,7 +1,7 @@
 # AutoPhotoSort - Organize Your Photos by Date
 
-Tired of messy photo libraries? **AutoPhotoSort** is a simple Python tool designed to automatically organize your photos into folders based on the year and month they are taken.
-supported formats = '.jpg', '.jpeg', '.png', '.nef', '.mov', '.mp4', '.avi'
+- Tired of messy photo libraries? **AutoPhotoSort** is a simple Python tool designed to automatically organize your photos into folders based on the year and month they are taken.
+- Supported formats = '.jpg', '.jpeg', '.png', '.nef', '.mov', '.mp4', '.avi'
 
 ## Project Structure
 
@@ -56,6 +56,7 @@ pip install -r requirements.txt
     Once the script finishes, your photos will be sorted into folders by year and month within the `data/output` directory. For example, photos taken in November 2024 will be in a folder named `2024 November`.
 
 ## GUI Application
+![AutoPhotoSort GUI](https://github.com/cv0x/AutoPhotoSort/blob/main/src/img/gui.png?raw=true)
 
 This project now includes a graphical user interface (GUI) for easier interaction.
 
